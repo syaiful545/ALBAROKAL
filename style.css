@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Georgia', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+    overflow: hidden; /* Mencegah scrollbar muncul */
+    background-color: #000; /* Fallback jika video tidak dimuat */
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan video menutupi seluruh area */
+    z-index: -1; /* Menempatkan video di belakang konten */
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay untuk kontras */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile>img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile>p {
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.link a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ikon di kiri, teks di tengah */
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 15px 20px;
+    background-color: rgba(76, 175, 80, 0.8); /* Hijau dengan transparansi 80% */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-size: 21px;
+    transition: all 0.3s ease;
+}
+
+.link a i {
+    margin-right: 15px; /* Jarak antara ikon dan teks */
+    font-size: 24px;
+}
+
+.link a span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.link a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efek hover */
+    transform: translateY(-3px); /* Efek naik sedikit */
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer i {
+    color: #4CAF50; /* Warna hijau */
+    font-size: 16px;
+}
